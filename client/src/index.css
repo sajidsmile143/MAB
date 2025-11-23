@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0a0a0a;
+  --color-secondary: #1c1c1c;
+  --color-accent: #D4AF37;
+  /* Gold */
+  --color-text: #F3F4F6;
+  --color-muted: #9CA3AF;
+  --color-emerald: #10B981;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+body {
+  @apply bg-primary text-text font-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif text-accent;
+}
+
+button,
+a,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+}
